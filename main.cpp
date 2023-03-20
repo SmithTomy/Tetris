@@ -489,6 +489,8 @@ void Piece::judge(){
 				box_map[i][j]=0;  //把该层清空(标记为未被占用)
 		}
 	}
+
+	//行高遍历
     /*上面判断完后 看line的值,如果非 0 说明有层已满需要进行消除*/
 	if(line!=0){
 	for(i=game_win_height-2;i>=2;i--){
